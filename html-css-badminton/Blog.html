@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/main-logo.png" width="110px"></a>
+            <div id="academy-name">Badminton Academy</div>
+
+            <div class="nav-links" id="NavLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Coaching.html">Coaching </a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>Blog Space</h1>
+    </section>
+
+<!-- Blog Space -->
+<section class="blog-content">
+    <div class="row">
+    <div class="blog-left">
+        <img src="images/smash.jpg" alt="">
+        <h2>The trick to deliver a deadly Smash</h2>
+        <p>Many of us would have caught badminton replays of Olympians on TV, jumping in slow motion with 
+            their racket arm recoiled. In a split second, the shuttlecock pierces through the air downwards 
+            to the opponent’s ground to the vehement cheers of the crowd, signifying a point scored. <br>
+            That shot there, is called a smash and when executed with power and speed it is one of the most difficult
+             plays to return. Unlike a net kill, a badminton smash requires a great deal of power and is 
+             a move which can easily kill of the rally and win you points. <br>            
+            Like most badminton shots, a smash can be performed with both the forehand and backhand. Which is why 
+            mastering both grips is of utmost importance!
+
+         <h3> <u>How to perform a forehand badminton smash: </u></h3>
+
+            <ol>
+                <li>Adopt a forehand grip.</li>
+                <li>Shift your weight to the back foot, bend your elbow, lock your wrist and prepare to swing forward.</li>
+                <li>Make contact with your shuttle at the highest point possible and swing your arm forward with force, 
+                    straightening your elbow as you hit the shuttle.</li>
+                <li>Jerk your wrist downwards when the racquet is in contact with the shuttle, to give the shuttle more 
+                    power to angle it downwards towards your opponent’s court.</li>
+                <li>Do a follow through with your racquet.</li>
+            </ol>
+            
+            <h3><u>To perform a backhand smash: </u></h3>
+            
+            <ol>
+                <li>Adopt a backhand grip.</li>
+                <li>Have your back face the net.</li>
+                <li>Shift your weight to your racket foot, and lift your arm with your forearm being parallel to the floor.</li>
+                <li>Keep the racket arm close to your body and hold the racket pointing down.</li>
+                <li>As with the forehand smash, hit the shuttle at the highest point of contact and flick down your wrist to 
+                    generate more power.</li>
+                <li>With a backhand smash, a follow through is not needed</li>
+                <li>Apart from these two popular smashes, there is the “Around the Head Smash”. This is played at the 
+                    non-racquet side of your body and it is very similar to the forehand overhead smash except for a few minor adjustments.</li>
+
+            </ol>
+        </p>
+
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form action="" class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="know-more">Post Comment</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="blog-right">
+        <h3>Other blogs</h3>
+        
+            <div>
+                <span>Essential Net Skills </span>
+                <span>5 min </span>
+            </div>
+            <div>
+                <span>Shadow Movements to master first </span>
+                <span>3 min </span>
+            </div>
+            <div>
+                <span>30min daily workout to stay fit </span>
+                <span>7 min </span>
+            </div>
+            <div>
+                <span>5 tips to improve your backhand</span>
+                <span>10 min</span>
+            </div>
+       
+    </div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Recognised Badminton Training Academy <br> Ensuring people of all ages to embrace the joy of playing badminton.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+        <br>
+        Designed by Soora Shivani <br> USN: 1BG19CS103
+
+</section>
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("NavLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>

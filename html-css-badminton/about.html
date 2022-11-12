@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/main-logo.png" width="110px"></a>
+            <div id="academy-name">Badminton Academy</div>
+
+            <div class="nav-links" id="NavLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Coaching.html">Coaching </a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- ----- about us content ----- -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h2>We are the India's largest and the most efficient badminton coaching center.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat quaerat vel tenetur,
+                 consectetur esse molestiae iste, autem amet ullam repellendus quis velit. Molestiae fuga 
+                 assumenda quos ut consequatur id nisi, eaque alias tenetur accusantium.</p>
+                 <br><br>
+            <a href="/" class="know-more">EXPLORE MORE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about_img.jpg" alt="">
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Recognised Badminton Training Academy <br> Ensuring people of all ages to embrace the joy of playing badminton.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+        <br>
+        Designed by Soora Shivani <br> USN: 1BG19CS103
+
+</section>
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("NavLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>

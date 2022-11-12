@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/main-logo.png" width="110px"></a>
+            <div id="academy-name">Badminton Academy</div>
+
+            <div class="nav-links" id="NavLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Coaching.html">Coaching </a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-- ------ Contact Us ------- -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6925.9660044109305!2d77.5564250504598!3d13.031433008301892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d5da75cc2fb%3A0x87f0d4c69917447b!2sJaya%20Prakash%20Narayana%20Park!5e0!3m2!1sen!2sin!4v1668236468846!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h4>XYZ Road, ABC Building</h4>
+                    <h6>Bangalore, Karnataka, IN</h6>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h4>+1 0123456789</h4>
+                    <h6><br> Monday to Friday  <br> 5 batches available:
+                    <ol>
+                        <li>5 AM - 6 AM</li>
+                        <li>6:15 AM - 7:15 AM</li>
+                        <li>7:30 AM - 8:30 AM</li>
+                        <li>5:30 PM - 6:30 PM</li>
+                        <li>6:45 PM - 7:45 PM</li>
+                    </ol></h6>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h4>badminton.academy@blore.com</h4>
+                    <h6>Email us your query</h6>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+    
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="text" name="coaching_program" placeholder="Enter program choosen" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="know-more">Send Message</button>
+
+            </form>
+
+        </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Recognised Badminton Training Academy <br> Ensuring people of all ages to embrace the joy of playing badminton.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+        <br>
+        Designed by Soora Shivani <br> USN: 1BG19CS103
+
+</section>
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("NavLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
