@@ -1,0 +1,16 @@
+/* style={{"width": "18rem", "maxHeight":"360px", "backgroundColor": "#4b4b4b"}} */
+
+.item{
+    width: 18rem;
+    max-height: 360px;
+    background-color: #353535;
+}
+
+.dropdown{
+    /* background-color: #ddb5ab; */
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-color: #222222 ;
+
+}
