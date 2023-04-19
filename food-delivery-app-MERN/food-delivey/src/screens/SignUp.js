@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
+
+    let navigate = useNavigate()
 
     const [credentials, setcredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
     const handleSubmit = async (e) => {
@@ -23,6 +25,10 @@ export default function SignUp() {
 
         if(!json.success){
             alert("Enter valid credentials")
+        }
+
+        if(json.success){
+            navigate('/login');  
         }
 
     }

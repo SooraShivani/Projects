@@ -10,7 +10,7 @@ export default function Card(props) {
 		<div>
 			<div className="card mt-3 item" style={{ "backgroundColor": "#353535" }} >
 				{/* must close img tag, notice the style attribute above /> */}
-				<img src={props.imgSrc} className="card-img-top" alt="pizza" />
+				<img src={props.imgSrc} className="card-img-top card-images" alt="pizza" />
 				<div className="card-body">
 					<h5 className="card-title">{props.foodName}</h5>
 					{/* <p className="card-text">Some quick example text.</p> */}
