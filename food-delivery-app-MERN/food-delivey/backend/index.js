@@ -19,8 +19,12 @@ mongoDB();
 
 // if we write all the javascript code for each functionality then the code will get too huge, hence
 // creating differnt files for them
+// the below is for creating routes
 app.use(express.json())
 app.use('/api',require("./Routes/CreatUser"));
+app.use('/api',require("./Routes/DisplayData"));
+// whatever route is created here, a file with the same name should be created, so it goes to that partiular file and then goes to the endpoint specified there
+
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

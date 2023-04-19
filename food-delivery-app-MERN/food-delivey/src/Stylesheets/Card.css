@@ -2,7 +2,7 @@
 
 .item{
     width: 18rem;
-    max-height: 360px;
+    max-height: 360px !important;
     background-color: #353535;
 }
 
