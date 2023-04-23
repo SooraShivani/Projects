@@ -47,14 +47,16 @@ export default function Home() {
 								{/* <button className="btn btn-outline-success text-white bg-success" type="submit">Search</button> */}
 							</div>
 						</div>
-						<div className="carousel-item active">
-							<img src="https://source.unsplash.com/random/900x300/?pizza" className="d-block w-100" alt="..." />
+						<div className="carousel-item active ">
+							{/* <img src="https://source.unsplash.com/random/900x300/?pizza" className="d-block w-100" alt="..." /> */}
+							<img src="https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939__340.jpg" className="d-block w-100 carousel-img-div" alt="..." />
+
 						</div>
-						<div className="carousel-item">
-							<img src="https://source.unsplash.com/random/900x300/?pasta" className="d-block w-100" alt="..." />
+						<div className="carousel-item carousel-img-div">
+							<img src="https://cdn.pixabay.com/photo/2022/05/20/08/55/pasta-7209002_960_720.jpg" className="d-block w-100 carousel-img-div" alt="..." />
 						</div>
-						<div className="carousel-item">
-							<img src="https://source.unsplash.com/random/900x300/?masaladosa" className="d-block w-100" alt="..." />
+						<div className="carousel-item carousel-img-div">
+							<img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" className="d-block w-100 carousel-img-div" alt="..." />
 						</div>
 					</div>
 					<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -86,9 +88,9 @@ export default function Home() {
 														// 
 														<div key={filterItems._id} className='col-12 col-md-6 col-lg-3'>
 															<Card
-																foodName={filterItems.name}
+																foodItem={filterItems}
 																options={filterItems.options[0]}
-																imgSrc={filterItems.img}
+																
 															></Card>
 														</div>
 													)

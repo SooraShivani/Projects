@@ -16,6 +16,18 @@
 }
 
 .card-images{
-    height: 220px !important;
+    max-height: 180px !important;
     object-fit: fill !important;
+    min-height: 180px;
+}
+
+.card{
+    min-height: 390px;
+}
+
+.btn-cart{
+    background-color: #ff785a !important;
+    color: white;
+    /* margin-left: 50px !important; */
+    margin-left: 23% !important;
 }
